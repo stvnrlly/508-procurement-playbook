@@ -5,11 +5,11 @@ then
     TRAVIS_BRANCH="test"
     TRAVIS_COMMIT="testing123"
     # TRAVIS_REPO_SLUG must be a valid github repo
-    TRAVIS_REPO_SLUG="stvnrlly/continua11y"
+    TRAVIS_REPO_SLUG="18f/508-procurement-playbook"
     # change to whichever script you need to start the web server (make sure to detach so that the script continues)
-    RUN_SCRIPT="forever start --spinSleepTime 1000 --minUptime 3000 app.js"
+    RUN_SCRIPT=""
     # shut down the web server so that you can run the script again without conflicts
-    KILL_SCRIPT="forever stop app.js"
+    KILL_SCRIPT=""
     # the port where the server will run
     PORT=3000
     # if your site generates a sitemap, set this to true to use it instead of spidering
@@ -22,7 +22,6 @@ else
     npm install -g pa11y
     npm install -g pa11y-reporter-1.0-json
     npm install -g json
-    npm install -g forever # for node testing
 fi
 
 # set up the JSON file for full results to send
