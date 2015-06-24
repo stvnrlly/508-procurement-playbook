@@ -1,2 +1,10 @@
 script:
   - ./script/pa11y.sh
+after_script: bash ./script/continua11y.sh
+env:
+    global:
+    - RUN_SCRIPT=""
+    - KILL_SCRIPT=""
+    - USE_SITEMAP=false
+    - PORT=8080
+    - CONTINUA11Y="continua11y.herokuapp.com"
