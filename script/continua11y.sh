@@ -11,7 +11,7 @@ then
     # shut down the web server so that you can run the script again without conflicts
     KILL_SCRIPT=""
     # the port where the server will run
-    PORT=3000
+    PORT=8080
     # if your site generates a sitemap, set this to true to use it instead of spidering
     USE_SITEMAP=false
     # the location for the locally-running version of continua11y
